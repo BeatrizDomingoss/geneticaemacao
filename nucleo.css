@@ -1,0 +1,321 @@
+/* CONTÉUDO */
+
+.inicio-nucleo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    top: -10px;
+}
+
+.div-inicio-nucleo,
+.inicio-celulas-img {
+    width: 40%; /* Define a largura das divs */
+    padding: 10px; /* Adiciona espaçamento interno */
+}
+
+.div-inicio-nucleo p,
+.inicio-celulas-img p {
+   font-size: 1rem;
+}
+
+.inicio-celulas-img {
+    margin-right: 80px;
+}
+
+.div-inicio-nucleo {
+    margin-left: 50px;
+
+}
+
+.inicio-celulas-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative; /* Necessário para posicionar a imagem de forma absoluta */
+    overflow: hidden;
+}
+
+.inicio-nucleo h2 {
+    background: #a4bdc4;
+    color: #1d1b31;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+hr {
+    width: 30%;
+    background:  rgb(2, 65, 102);
+    margin: 20px auto; /* Centraliza a linha horizontal */
+    padding: 1px;
+    margin-top: 60px;
+}
+
+/*IMAGEM QUE FLUTUA */
+
+.img-flutua {
+    position: absolute; /* Posiciona a imagem de forma absoluta */
+    animation: floatAnimation 3s ease-in-out infinite; /* Define a animação */
+}
+
+/* Animação de flutuação */
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0); /* Inicialmente sem deslocamento vertical */
+    }
+    50% {
+        transform: translateY(-20px); /* Flutua para cima */
+    }
+    100% {
+        transform: translateY(0); /* Retorna à posição inicial */
+    }
+}
+
+/* RESPONSIVIDADE DO INÍCIO */
+
+@media screen and (max-width: 768px) {
+    .inicio-nucleo {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        text-align: center;
+    }
+
+    .div-inicio-nucleo,
+    .inicio-celulas-img {
+        width: 100%; /* Ocupa toda a largura */
+        margin-bottom: 20px; /* Adiciona margem inferior */
+        margin: 20px auto;
+    }
+
+    .inicio-celulas-img {
+        margin-right: 0; /* Remove a margem */
+    }
+
+    hr {
+        top: -80px;
+    }
+}
+
+/* TEXTO */
+
+.celula-texto p {
+    color: #1d1b31;
+    font-size: 1.1rem;
+    padding: 10px 40px;
+}
+
+.celula-texto ul {
+    color: #1d1b31;
+    font-size: 1.1rem;
+    padding: 10px 40px;
+}
+
+.celula-texto h2 {
+    color: #1d1b31;
+    font-size: 30px;
+    padding: 20px 40px 5px;
+}
+
+.linha-titulo {
+    width: 10%;
+    background:  rgb(2, 65, 102);
+    margin-left: 15%; /* Centraliza a linha horizontal */
+    padding: 1px;
+    margin-top: -10px;
+}
+
+.celula-texto .referencias {
+    font-size: 15px;
+    color: #1d1b31;
+    text-align: center;
+    margin: 20px auto;
+    width: 400px;
+}
+
+.celula-texto h3 {
+    text-align: center;
+}
+
+.celula-texto a {
+    color:#1d1b31;
+}
+
+.riba-imagem3d {
+    text-align: center;
+}
+
+/*Responsividade do texto */
+
+@media screen and (max-width: 768px) {
+    .linha-titulo{
+        width: 30%;
+        margin-top: 75px;
+        margin-left: 40%;
+    }
+    .celula-texto p {
+        font-size: 1rem;
+    }
+    .celula-texto .referencias{
+        font-size: 0.8rem;
+    }
+    .celula-texto ul{
+        font-size: 1rem;
+    }
+}
+
+/*IMAGENS */
+
+.imagem3d {
+    width: 50%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto; 
+}
+
+
+.celula-texto .nucleo-imagem  img {
+    width: 50%;
+    margin: 20px auto;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2; /* Coloca a imagem acima do overlay */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+.celula-texto .poros-imagem  img {
+    width: 500px;
+    margin: 20px auto;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2; /* Coloca a imagem acima do overlay */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+
+/* Responsividade imagens */
+
+@media screen and (max-width: 768px) {
+    .imagem3d {
+        width: 400px;
+    }
+    .celula-texto .nucleo-imagem img {
+        width: 400px;
+        height: auto;
+    }
+    .celula-texto .poros-imagem img {
+        height: auto;
+        width: 400px;
+    }
+}
+
+/* FOOTER */
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+    display: block;
+    top: 10px;
+  }
+
+footer p{
+    color:rgb(255, 255, 255);
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+.ifrn-info,
+.logo-container,
+.academic-info {
+    flex: 1;
+  }
+
+.ifrn-info {
+    margin-left: 30px;
+}
+
+.academic-info {
+    margin-right: 30px;
+}
+
+.academic-info h3,
+.ifrn-info h3{
+    font-size: 15px;
+}
+
+.academic-info p,
+.ifrn-info p,
+.final p{
+    font-size: 1rem;
+    color:#fff;
+    text-align: left;
+}
+  
+.logo-container img {
+    width: auto;
+    height: 80px;
+    border-radius: 16px;
+}
+
+.final p{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    footer a {
+      display: block;
+      margin-bottom: 10px;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .ifrn-info,
+    .logo-container,
+    .academic-info {
+      width: 80%;
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .ifrn-info {
+      margin: 0;
+    }
+  
+    .academic-info {
+      margin: 0;
+    }
+  
+    .logo-container img {
+      width: 30%;
+      height: auto;
+    }
+  
+    .academic-info h3,
+    .ifrn-info h3 {
+      font-size: 14px;
+    }
+  
+    .academic-info p,
+    .ifrn-info p,
+    .final p {
+      font-size: 0.7rem;
+    }
+  }

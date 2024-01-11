@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genética em Ação</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="celula.css">
+    <script src="inicio.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <i class='bx bxs-virus bx-tada' ></i>            
+            <span class="logo_name">Genética em ação</span>
+        </div>
+        <!--<li>
+            <i class='bx bxs-home'></i>
+            <nav class="navbar navbar-light bg-light">
+                <form class="form-inline">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                </form>
+            </nav>
+        </li>-->
+        <ul class="nav-links">
+            <li>
+                <a href="https://dbalbinoa.github.io/genetica-em-acao/inicio">
+                    <i class='bx bxs-home'></i>
+                    <span class="link_name">Início</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="https://dbalbinoa.github.io/genetica-em-acao/inicio">Início</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="https://dbalbinoa.github.io/genetica-em-acao/celula">
+                    <i class='bx bxs-certification'></i>
+                    <span class="link_name">Células</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="https://dbalbinoa.github.io/genetica-em-acao/celula">Células</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="https://dbalbinoa.github.io/genetica-em-acao/nucleo">
+                    <i class='bx bx-shape-polygon'></i>
+                    <span class="link_name">Núcleo</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="https://dbalbinoa.github.io/genetica-em-acao/nucleo">Núcleo</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-network-chart'></i>
+                        <span class="link_name">Cromossomo</span>
+                    </a>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Cromossomo</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-fingerprint'></i>
+                        <span class="link_name">DNA</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow' ></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">DNA</a></li>
+                    <li><a href="#">Hereditariedade</a></li>
+                    <li><a href="#">Doenças</a></li>
+                    <li>
+                </ul>
+            </li>
+            <li>
+                <a href="https://dbalbinoa.github.io/genetica-em-acao/informacoes">
+                    <i class='bx bx-group'></i>
+                    <span class="link_name">Sobre Nós</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="https://dbalbinoa.github.io/genetica-em-acao/informacoes">Sobre Nós</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="home-content">
+        <i class='bx bx-menu' ></i>
+        <span class="text">Genética em Ação</span>
+    </div>
+    <section class="home-section" id="topo">
+   
+        <div class="conteudo">
+            <div class="inicio-celulas">
+                <div class="div-inicio-celulas">
+                    <h2>Células procariontes e eucariontes</h2>
+                    <p>Esta pesquisa investiga as distintas características e papéis das células procariontes e eucariontes, oferecendo insights fundamentais sobre a complexidade da vida e seus sistemas biológicos.
+                    </p>
+                </div>
+                <div class="inicio-celulas-img">
+                    <img src="./imagens/celula-inicial.png" alt="imagem da célula" class="img-flutua">
+                </div>
+            </div>
+            <hr>
+
+            <!--SEÇÃO DE IMAGEM CLICÁVEL-->
+
+        <section class="celula-section">
+            <div class="celula-overlay"></div>
+                <h2>Que tal começar por aqui?</h2>
+                <p>Entenda mais sobre as células e suas organelas clicando em uma das áreas indicadas!</p>
+                <div class="img-clicavel">
+                    <img src="./animacoes/celula.gif" usemap="#organelasMap" alt="Célula e organelas">
+                </div>
+            
+            <map name="organelasMap">
+                <area shape="rect" coords="132,44,173,72" alt="membrana" href="#membrana">
+                <area shape="rect" coords="141,196,179,227" alt="citoplasma" href="#citoplasma">
+                <area shape="rect" coords="402,39,445,74" alt="núcleo" href="#nucleo">
+                <area shape="rect" coords="476,201,511,235" alt="Reticulo" href="#reticulo">
+                <area shape="rect" coords="567,135,605,169" alt="mitocondria" href="#mitocondria">
+                <area shape="rect" coords="394,301,429,330" alt="liso" href="#liso">
+                <area shape="rect" coords="564,359,599,394" alt="Área 1" href="#ribossomo">
+                <area shape="rect" coords="67,22,86,37" alt="Área 1" href="#membrana">
+                <area shape="rect" coords="71,99,90,114" alt="Área 1" href="#citoplasma">
+                <area shape="rect" coords="202,20,223,38" alt="Área 1" href="#nucleo">
+                <area shape="rect" coords="237,102,257,118" alt="Área 1" href="#reticulo">
+                <area shape="rect" coords="284,68,303,85" alt="Área 1" href="#mitocondria">
+                <area shape="rect" coords="198,150,216,165" alt="Área 1" href="#liso">
+                <area shape="rect" coords="281,180,300,197" alt="Área 1" href="#ribossomo">
+            </map>
+        </section>
+    
+            <!--FIM DA SEÇÃO DE IMAGEM CLICÁVEL-->
+
+            <div class="celula-texto">
+                <p>As células são as unidades estruturais e funcionais dos seres vivos. Elas são responsáveis por todas as funções vitais dos organismos, incluindo a reprodução, o metabolismo, o crescimento e o desenvolvimento. Existem dois tipos de classificação para as células: procariontes e eucariontes.  A diferença primordial entre ambas está relacionada à sua estrutura celular. 
+                </p>
+                <h2>Células procariontes</h2>
+                <hr class="linha-titulo">
+                <p>A célula procariótica não possui núcleo, ou seja, <strong>o seu material genético não fica envolto por uma membrana nuclear</strong>, logo, ele fica disperso no citoplasma. Elas são encontradas em organismos unicelulares, como bactérias e arqueas (cianobactérias). Ela tem uma estrutura simples por não possuir organelas celulares membranosas, como o complexo de Golgi, responsável pelo armazenamento, transformação e exportação das substâncias das células e retículo endoplasmático, que tem como principal função a produção de lipídios e proteínas na célula.
+                </p>
+                <br>
+                <p>As células procariontes apresentam as seguintes características:
+                </p>
+                <ul>
+                    <li>Ausência de núcleo: o material genético está disperso no citoplasma, sem estar envolvido por uma membrana nuclear.</li>
+                    <li>Presença de ribossomos: os ribossomos são organelas responsáveis pela síntese de proteínas.</li>
+                    <li>Presença de DNA: o DNA é o material genético da célula, que contém as informações necessárias para a sua construção e funcionamento.</li>
+                    <li>Presença de cromossomo bacteriano: o cromossomo bacteriano é uma molécula de DNA circular que contém genes que codificam as proteínas necessárias para o funcionamento da célula.</li>
+                    <li>Presença de plasmídeos: os plasmídeos são pequenas moléculas de DNA circular que não estão ligadas ao cromossomo bacteriano. Os genes que codificam proteínas nos plasmídeos relacionam-se a algumas funções adaptativas, como a resistência a antibióticos.</li>
+                    <li>Ausência de organelas membranosas: as células procariontes não possuem estruturas como mitocôndrias, retículos endoplasmáticos, complexo golgiense e vacúolos.</li>
+                    <li>Ausência de citoesqueleto: o citoesqueleto é uma rede de filamentos proteicos que fornece estrutura e suporte à célula. Nas células procariontes, não há a presença de citoesqueleto, o que impede a realização da endocitose, responsável por trazer para o interior dessa estrutura substâncias por meio da invaginação da membrana plasmática, e da exocitose, a qual está relacionada com o controle do que entra e do que sai da célula.</li>
+                </ul>
+                <br>
+                <div class="procarionte-imagem">
+                    <img src="./imagens/procarionte.png" class="procarionte-imagem" alt="célula procarionte">
+                    <div class="referencias">
+                        <span>Estrutura das células procariontes. Disponível em: https://images.app.goo.gl/hsmDJPb6uE1iFLsL8 </span>
+                    </div>
+                </div>
+                <br>
+                <p>Acerca da estrutura das células procariontes:</p>
+                <ul>
+                    <li>Cápsula: uma espécie de proteção que reveste a célula externamente;</li>
+                    <li>Citoplasma: substância de semelhança gelatinosa responsável por manter o formato da célula;</li>
+                    <li>DNA: carrega as informações genéticas da célula;</li>
+                    <li>Flagelo: responsável por possibilitar a locomoção da célula;</li>
+                    <li>Membrana plasmática: controla a troca de substâncias da célula com o meio externo;</li>
+                    <li>Parede celular: confere forma à célula;</li>
+                    <li>Pilus: possibilita a fixação da bactéria ao meio;</li>
+                    <li>Ribossomo: estrutura responsável pela produção de proteínas.</li>
+                </ul>
+                <br>
+                <h3>Reprodução das células procariontes</h3>
+                <br>
+                <p>As células procariontes não se reproduzem por mitose, como as eucariontes. As células procariontes se reproduzem assexuadamente por um processo chamado fissão binária. A reprodução assexuada é um tipo de reprodução em que apenas um indivíduo é parental, e este passa seus genes aos seus descendentes. Na fissão binária, o DNA da célula mãe, ou seja, a célula original, se duplica e a célula se divide ao meio, formando duas células filhas idênticas à célula mãe. A fissão binária, portanto, ocorre em quatro etapas: </p>
+                <p>1 - Duplicação do DNA: O DNA da célula mãe se duplica, formando duas cópias idênticas.</p>
+                <p>2 - Crescimento da célula: A célula cresce, preparando-se para a divisão.</p>
+                <p>3 - Divisão do citoplasma: O citoplasma da célula é dividido ao meio, formando duas células filhas.</p>
+                <p>4 - Divisão da membrana plasmática: A membrana plasmática da célula se divide ao meio, formando duas células filhas separadas.</p>
+                <br>
+                <div class="procarionte-imagem">
+                    <img src="./imagens/repoducao-procarionte.jpg" class="procarionte-imagem" alt="célula procarionte">
+                    <div class="referencias">
+                        <span>Divisão binária das células procariontes. Disponível em: https://conhecimentocientifico.r7.com/celulas-procariontes/</span>
+                    </div>
+                <p>A divisão ou fissão binária é um processo que permite que as células procariontes se reproduzam rapidamente. Isso é importante para as bactérias, que podem se reproduzir em questão de horas.
+                Além dela, as células procariontes também podem se reproduzir por outros processos assexuados, como a conjugação e a transformação.</p>
+                    
+                <p><strong>Conjugação:</strong> Na conjugação, duas células procariontes se ligam e uma célula doadora transfere DNA para a célula receptora. O DNA transferido pode conter genes novos ou vantajosos para a célula receptora.</p>
+                <p><strong>Transformação:</strong> Na transformação, uma célula procarionte recebe DNA livre do meio ambiente. O DNA livre pode ser proveniente de células mortas ou de outras células que estejam se dividindo.
+                </p>
+                <br>
+
+                <h2>Células eucariontes</h2>
+                <hr class="linha-titulo">
+                <p>As células eucariontes são as células mais complexas que existem. São aquelas que apresentam um núcleo delimitado por um envoltório nuclear, onde é guardado as informações genéticas do indivíduo. Nesse tipo celular, <strong>o material genético não está espalhado pelo citoplasma, como nas células procariontes, mas, sim, restritos à região do núcleo</strong>. Elas são encontradas em organismos unicelulares e pluricelulares, como plantas, animais, fungos e protistas. São tipos celulares mais complexos que as células procariontes. Do grego “Eukarya”, significa “núcleo perfeito ou verdadeiro”.</p>
+                <p>As células eucariontes são caracterizadas pelas seguintes características:
+                </p>
+                <ul>
+                    <li>Presença de um núcleo definido: o material genético está envolvido por uma membrana nuclear, que o protege e o separa do citoplasma.</li>
+                    <li>Presença de outras organelas membranosas: as organelas membranosas são estruturas especializadas que desempenham funções específicas na célula. Algumas das principais organelas membranosas são as mitocôndrias, os cloroplastos, o retículo endoplasmático, o complexo de Golgi e o lisossomo.</li>
+                    <li>Presença de um citoesqueleto: o citoesqueleto é uma rede de filamentos e túbulos que fornece estrutura e suporte à célula.</li>
+                </ul>
+                <br>
+                <div class="eucarionte-imagem">
+                    <img src="./imagens/celula-eucariotica.jpg" alt="célula eucarionte">
+                    <div class="referencias">
+                        <span>Estrutura das células eucariontes. Disponível em: https://conhecimentocientifico.r7.com/celulas-procariontes/</span>
+                </div>
+                <p id="membrana">A <strong>membrana plasmática</strong> é a fronteira celular das células eucarióticas, formada por uma dupla camada de fosfolipídios e proteínas. Ela controla o fluxo de substâncias, permitindo a entrada de nutrientes e a eliminação de resíduos. Além disso, desempenha papéis essenciais na comunicação celular, no reconhecimento de moléculas e na transmissão de sinais, mantendo a integridade e regulação do ambiente interno da célula.</p>
+
+                <p>O <strong id="citoplasma">citoplasma</strong> é a região intracelular das células onde se encontram os organelos e estruturas celulares suspensos em um gel chamado citosol. É nesse espaço que muitas das atividades celulares ocorrem, incluindo processos metabólicos, síntese de proteínas, transporte de substâncias e movimentos intracelulares. É fundamental para a manutenção e funcionamento da célula, oferecendo suporte estrutural e ambiente para as atividades vitais que sustentam a vida celular.</p>
+
+                <p>No interior do citoplasma da célula eucariótica estão mergulhadas diversas organelas membranosas que apresentam as mais diversas funções. Entre as principais organelas encontradas, podemos citar o retículo endoplasmático, o complexo golgiense, os lisossomos, as mitocôndrias, o peroxissomo, centríolos e cloroplastos, presentes apenas em células vegetais.</p>
+                <p>Acerca da estrutura das células eucariontes:</p>
+                <ul>
+                    <li id="nucleo">Núcleo: o núcleo é a estrutura que abriga o material genético da célula. Ele é envolvido por uma membrana nuclear, que protege o DNA. </li>
+                    <li>Mitocôndria: as mitocôndrias são organelas responsáveis pela produção de energia para a célula. Elas são as "usinas" da célula.</li>
+                    <li>Retículo endoplasmático: o retículo endoplasmático é um sistema de membranas que atua no transporte de substâncias dentro da célula.</li>
+                    <li>Complexo de Golgi: o complexo de Golgi é um conjunto de membranas que atua na síntese, armazenamento e secreção de proteínas.</li>
+                    <li>Lisossomo: os lisossomos são organelas que atuam na digestão de substâncias dentro da célula.</li>
+                    <li>Vacúolo: o vacúolo é uma organela presente em células vegetais que atua no armazenamento de substâncias e na manutenção da pressão osmótica da célula.</li>
+                    <li>Centríolo: os centríolos são organelas presentes em células animais que participam da divisão celular.</li>
+                    <li id="ribossomo">Ribossomos: os ribossomos são organelas não membranosas que participam da síntese de proteínas.</li>
+                </ul>
+
+                <p>Além da produção de energia, as <strong id="mitocondria">mitocôndrias</strong> desempenham um papel fundamental em processos como o ciclo do ácido cítrico e a cadeia respiratória, nos quais ocorrem reações bioquímicas que convertem nutrientes, como glicose e ácidos graxos, em ATP.</p>
+
+                <p>O <strong id="reticulo">retículo endoplasmático rugoso</strong> desempenha um papel fundamental na síntese e processamento de proteínas. Os ribossomos aderidos à sua superfície são responsáveis pela tradução do código genético do RNA mensageiro (mRNA) em proteínas. Essas proteínas podem ser utilizadas para a constituição de organelas, como enzimas para reações metabólicas, ou até mesmo como componentes estruturais da própria célula.</p>
+
+                <p>Já o <strong id="liso">retículo endoplasmático liso</strong> está envolvido principalmente na síntese de lipídios, incluindo fosfolipídios e esteroides, essenciais para a constituição das membranas celulares. Além disso, o REL desempenha papéis importantes no metabolismo de carboidratos, na detoxificação de substâncias e na regulação do armazenamento de íons intracelulares, como o cálcio.</p>
+
+                <p>Além dessas organelas, as células eucariontes podem conter outras estruturas especializadas, como:
+                </p>
+                <ul>
+                    <li>Plasmídeos: os plasmídeos são pequenas moléculas de DNA que podem estar presentes nas células procariontes e eucariontes. Eles podem conter genes que conferem resistência a antibióticos ou outras características vantajosas para a célula.</li>
+                    <li>Centríolos: os centríolos são organelas presentes em células animais que participam da divisão celular. Eles são responsáveis pela formação do fuso mitótico, que é uma estrutura que separa as cromátides irmãs durante a divisão celular.</li>
+                    <li>Peroxissomos: os peroxissomos são organelas que atuam na degradação de substâncias tóxicas, como o peróxido de hidrogênio.</li>
+                    <li>Citoesqueleto: o citoesqueleto é uma rede de filamentos e túbulos que fornece estrutura e suporte à célula. Ele também é responsável pelo movimento celular, como a fagocitose e a exocitose.</li>
+                </ul>
+                    <p>A fagocitose é um processo onde a célula captura uma partícula sólida, relativamente grande, através de prolongamentos citoplasmáticos chamados de pseudópodes. A partícula é então englobada e passa a integrar o citoplasma da célula. Já a exocitose é o processo celular de liberação de substâncias para o meio extracelular. Por ser considerado o processo oposto, mas também similar a endocitose, um processo responsável por trazer para o interior da célula substâncias por meio da invaginação da membrana plasmática, e exocitose também envolve deformações na membrana plasmática e gasto de energia.</p>
+                
+                <br>
+                <h3>Divisão Celular</h3>
+                <br>
+                <p>O processo de divisão celular é responsável pela reprodução das células e apresenta diversas funções nos organismos, como originar um novo indivíduo e renovar células mortas.</p>
+
+                <p>Esse processo faz parte do ciclo celular, ou seja, do ciclo de vida de uma célula, que se inicia na sua formação por meio da divisão da célula mãe e vai até a sua própria divisão, com a formação das células filhas. O processo de divisão celular apresenta diversas funções importantes nos organismos, como originar um novo indivíduo e renovar as células mortas.</p>
+                <p>Existem dois tipos de divisão celular: mitose e meiose. A mitose é o tipo mais comum de divisão celular e é responsável pelo crescimento e renovação das células. A meiose é o tipo de divisão celular que ocorre na reprodução sexuada e é responsável pela formação dos gametas, as células reprodutivas.
+                </p>
+                <p>A <strong>mitose</strong> é dividida em quatro fases: prófase, metáfase, anáfase e telófase.</p>
+                <ul>
+                    <li>Prófase: Nesta fase, os cromossomos se condensam e os centrômeros se dividem.</li>
+                    <li>Metáfase: Nessa fase, os cromossomos se alinham na placa equatorial da célula.</li>
+                    <li>Anáfase: Nessa fase, os cromossomos se separam e migram para os pólos da célula.</li>
+                    <li>Telófase: Nessa fase, os cromossomos se descondensam, o núcleo se reorganiza e a célula se divide em duas.</li>
+                </ul>
+                <div class="eucarionte-imagem">
+                    <img src="./animacoes/mitose.gif" alt="Mitose">
+                    <div class="referencias">
+                        <span>Mitose. Disponível em: https://conhecimentocientifico.r7.com/celulas-procariontes/</span>
+                </div>
+                <p>Já a <strong>meiose</strong> é dividida em duas etapas: meiose I e meiose II.</p>
+                <p>Meiose I: Nesta etapa, os cromossomos homólogos se emparelham e trocam material genético.
+                <p>eiose II: Nesta etapa, os cromossomos homólogos se separam e migram para os pólos da célula.</p>
+                <div class="meiose">
+                    <img src="./imagens/meiose.png" alt="Meiose">
+                    <div class="referencias">
+                        <span>Fases da meiose. Disponível em: https://conhecimentocientifico.r7.com/celulas-procariontes/</span>
+                </div>
+                <p>Ao final da meiose, são produzidas quatro células-filhas com metade do número de cromossomos da célula-mãe. Isso é importante para a reprodução sexuada, pois permite que os gametas se combinem e formem um novo indivíduo com o número correto de cromossomos.</p>
+                <p>A divisão celular é um processo complexo que é controlado por um conjunto de genes. Esses genes regulam a replicação do DNA, o emparelhamento dos cromossomos homólogos, a separação dos cromossomos e a divisão da célula.A divisão celular é essencial para a vida e é responsável por uma série de processos importantes, incluindo o crescimento, a reprodução e a reparação de danos às células.</p>
+            </div>
+
+            
+            
+        
+        </div>
+    </section>
+
+    <!-- SEÇÃO DO FOOTER -->
+
+    <footer>
+        <a href="#topo">Voltar ao topo da página</a>
+        <div class="footer-container">
+            <div class="ifrn-info">
+                <h3>Instituto Federal do Rio Grande do Norte</h3>
+                <p>Desenvolvido pelas alunas Alicya Thamirys, Maria Beatriz e Maria Eduarda.</p>
+            </div>
+            <div class="logo-container">
+                <img src="./imagens/ifrn.png" alt="Logo do IF">
+            </div>
+            <div class="academic-info">
+                <h3>Informações Acadêmicas</h3>
+                <p>Este site foi desenvolvido como parte do Trabalho de Conclusão de Curso (TCC) das alunas de INFO 4M do IFRN Campus Parnamirim, sob orientação do professor Alvaro Hermano.</p>
+            </div>
+        </div>
+        <div class="final">
+            <p>&copy; 2023 Genética em Ação. Todos os direitos reservados.</p>
+        </div>
+        
+    </footer>
+
+    <!-- FIM DA SEÇÃO DO FOOTER -->
+
+    <script src="menu.js"></script>
+</body>
+</html>
